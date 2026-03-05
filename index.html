@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TastyBites | Premium Gourmet Experience</title>
+    <meta name="description"
+        content="TastyBites — Where bold flavors meet luxury dining. Experience the most unforgettable gourmet dishes crafted by world-class chefs.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ====== LOADING SCREEN ====== -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <div class="loader-flame">🔥</div>
+            <span class="loader-text">TASTYBITES</span>
+            <div class="loader-bar">
+                <div class="loader-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====== NAVBAR ====== -->
+    <header id="header">
+        <a href="#home" class="logo">TASTY<span>BITES</span></a>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#featured" class="nav-link">Featured</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#reserve" class="nav-link btn-reserve-nav">Reserve Now</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- ====== HERO SECTION ====== -->
+    <section class="hero" id="home">
+        <div class="hero-particles" id="hero-particles"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content" data-reveal>
+            <p class="hero-badge">🔥 #1 RATED RESTAURANT 2026</p>
+            <h1 class="hero-title">
+                EAT <span class="glow-text">BOLD.</span><br>
+                TASTE <span class="glow-text">POWER.</span>
+            </h1>
+            <p class="hero-subtitle">Where every bite is a statement and every flavor hits different. Premium
+                ingredients. Zero compromises.</p>
+            <div class="hero-cta">
+                <a href="#menu" class="btn-primary" id="btn-explore">
+                    <span>Explore Menu</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#reserve" class="btn-outline">
+                    <span>Book a Table</span>
+                    <i class="fas fa-calendar-check"></i>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-count="15">0</span><span class="stat-suffix">K+</span>
+                    <span class="stat-label">Happy Customers</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="50">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Menu Items</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="4.9">0</span><span class="stat-suffix">★</span>
+                    <span class="stat-label">Average Rating</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ====== ABOUT SECTION ====== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-wrap" data-reveal="left">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=80"
+                        alt="TastyBites Restaurant Interior" class="about-img">
+                    <div class="about-badge">
+                        <span class="badge-number">14</span>
+                        <span class="badge-text">Years of<br>Excellence</span>
+                    </div>
+                </div>
+                <div class="about-text" data-reveal="right">
+                    <p class="section-tag">WHO WE ARE</p>
+                    <h2 class="section-title">Not Just Food.<br><span class="highlight">An Experience.</span></h2>
+                    <p class="about-desc">Born in the heat of 2012, TastyBites was forged with one mission: to destroy
+                        ordinary dining. We don't just cook — we <strong>create fire on a plate</strong>. Our
+                        world-class chefs source the finest ingredients from 6 continents to deliver dishes that are as
+                        bold as our brand.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-fire"></i>
+                            <div>
+                                <h4>Flame-Grilled Perfection</h4>
+                                <p>Every dish is kissed by real fire</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <div>
+                                <h4>Farm-to-Flame Fresh</h4>
+                                <p>100% organic, locally sourced</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <h4>Award-Winning Chefs</h4>
+                                <p>5 Michelin-starred culinary artists</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FEATURED DISHES ====== -->
+    <section class="featured" id="featured">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <p class="section-tag">SIGNATURE COLLECTION</p>
+                <h2 class="section-title">Dishes That <span class="highlight">Break Rules.</span></h2>
+            </div>
+            <div class="featured-grid">
+                <div class="featured-card featured-large" data-reveal>
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80"
+                        alt="Wagyu Steak">
+                    <div class="featured-overlay">
+                        <span class="featured-tag">CHEF'S PICK</span>
+                        <h3>A5 Wagyu Ribeye</h3>
+                        <p>Japanese A5 marble-grade wagyu, seared to perfection with truffle butter and gold flakes</p>
+                        <span class="featured-price">$89</span>
+                    </div>
+                </div>
+                <div class="featured-card" data-reveal>
+                    <img src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?auto=format&fit=crop&w=800&q=80"
+                        alt="Lobster Thermidor">
+                    <div class="featured-overlay">
+                        <span class="featured-tag">ICONIC</span>
+                        <h3>Lobster Thermidor</h3>
+                        <p>Flambéed lobster in cognac cream, gruyère crust</p>
+                        <span class="featured-price">$72</span>
+                    </div>
+                </div>
+                <div class="featured-card" data-reveal>
+                    <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=80"
+                        alt="Molten Lava Cake">
+                    <div class="featured-overlay">
+                        <span class="featured-tag">FAN FAVORITE</span>
+                        <h3>Molten Lava Inferno</h3>
+                        <p>Dark chocolate core with 24k gold dusted berries</p>
+                        <span class="featured-price">$28</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== MENU SECTION ====== -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <p class="section-tag">EXPLORE THE FIRE</p>
+                <h2 class="section-title">Our <span class="highlight">Menu.</span></h2>
+            </div>
+            <div class="menu-tabs" data-reveal>
+                <button class="menu-tab active" data-tab="all">All</button>
+                <button class="menu-tab" data-tab="starters">Starters</button>
+                <button class="menu-tab" data-tab="mains">Mains</button>
+                <button class="menu-tab" data-tab="desserts">Desserts</button>
+                <button class="menu-tab" data-tab="drinks">Drinks</button>
+            </div>
+            <div class="menu-grid" id="menu-grid">
+                <!-- Starters -->
+                <div class="menu-card" data-category="starters" data-reveal>
+                    <div class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a?auto=format&fit=crop&w=600&q=80"
+                            alt="Bruschetta">
+                        <div class="menu-card-badge">NEW</div>
+                    </div>
+                    <div class="menu-card-info">
+                        <div class="menu-card-top">
+                            <h3>Truffle Bruschetta</h3>
+                            <span class="menu-card-price">$16</span>
+                        </div>
+                        <p>Crispy sourdough, black truffle, burrata, micro herbs</p>
+                        <button class="btn-add-cart"><i class="fas fa-plus"></i> Add</button>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="starters" data-reveal>
+                    <div class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?auto=format&fit=crop&w=600&q=80"
+                            alt="Tuna Tartare">
+                    </div>
+                    <div class="menu-card-info">
+                        <div class="menu-card-top">
+                            <h3>Tuna Tartare</h3>
+                            <span class="menu-card-price">$22</span>
+                        </div>
+                        <p>Yellowfin tuna, avocado mousse, sesame crisp, yuzu</p>
+                        <button class="btn-add-cart"><i class="fas fa-plus"></i> Add</button>
+                    </div>
+                </div>
+                <!-- Mains -->
+                <div class="menu-card" data-category="mains" data-reveal>
+                    <div class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=600&q=80"
+                            alt="Grilled Salmon">
+                        <div class="menu-card-badge hot">🔥 HOT</div>
+                    </div>
+                    <div class="menu-card-info">
+                        <div class="menu-card-top">
+                            <h3>Inferno Salmon</h3>
+                            <span class="menu-card-price">$34</span>
+                        </div>
+                        <p>Flame-grilled Atlantic salmon, miso glaze, charred broccolini</p>
+                        <button class="btn-add-cart"><i class="fas fa-plus"></i> Add</button>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="mains" data-reveal>
+                    <div class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
+                            alt="Smash Burger">
+                        <div class="menu-card-badge hot">🔥 HOT</div>
+                    </div>
+                    <div class="menu-card-info">
+                        <div class="menu-card-top">
+                            <h3>Beast Burger</h3>
+                            <span class="menu-card-price">$26</span>
+                        </div>
+                        <p>Double smash patty, aged cheddar, truffle aioli, brioche</p>
+                        <button class="btn-add-cart"><i class="fas fa-plus"></i> Add</button>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="mains" data-reveal>
+                    <div class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=600&q=80"
+                            alt="Pizza">
+                    </div>
+                    <div class="menu-card-info">
+                        <div class="menu-card-top">
+                            <h3>Diavola Pizza</h3>
+                            <span class="menu-card-price">$24</span>
+                        </div>
+                        <p>Wood-fired, nduja, pepperoni, chilli oil, fior di latte</p>
+                        <button class="btn-add-cart"><i class="fas fa-plus"></i> Add</button>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="mains" data-reveal>
+                    <div class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1546548970-71785318a17b?auto=format&fit=crop&w=600&q=80"
+                            alt="Carbonara">
+                    </div>
+                    <div class="menu-card-info">
+                        <div class="menu-card-top">
+                            <h3>Midnight Carbonara</h3>
+                            <span class="menu-card-price">$28</span>
+                        </div>
+                        <p>Squid ink pasta, pancetta, egg yolk, pecorino romano</p>
+                        <button class="btn-add-cart"><i class="fas fa-plus"></i> Add</button>
+                    </div>
+                </div>
+                <!-- Desserts -->
+                <div class="menu-card" data-category="desserts" data-reveal>
+                    <div class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=600&q=80"
+                            alt="Lava Cake">
+                    </div>
+                    <div class="menu-card-info">
+                        <div class="menu-card-top">
+                            <h3>Lava Cake</h3>
+                            <span class="menu-card-price">$18</span>
+                        </div>
+                        <p>Molten dark chocolate, vanilla gelato, berry compote</p>
+                        <button class="btn-add-cart"><i class="fas fa-plus"></i> Add</button>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="desserts" data-reveal>
+                    <div class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=600&q=80"
+                            alt="Tiramisu">
+                    </div>
+                    <div class="menu-card-info">
+                        <div class="menu-card-top">
+                            <h3>Dark Tiramisu</h3>
+                            <span class="menu-card-price">$16</span>
+                        </div>
+                        <p>Espresso-soaked savoiardi, mascarpone, cocoa dust</p>
+                        <button class="btn-add-cart"><i class="fas fa-plus"></i> Add</button>
+                    </div>
+                </div>
+                <!-- Drinks -->
+                <div class="menu-card" data-category="drinks" data-reveal>
+                    <div class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=600&q=80"
+                            alt="Signature Cocktail">
+                    </div>
+                    <div class="menu-card-info">
+                        <div class="menu-card-top">
+                            <h3>Inferno Negroni</h3>
+                            <span class="menu-card-price">$19</span>
+                        </div>
+                        <p>Smoked gin, campari, sweet vermouth, flamed orange peel</p>
+                        <button class="btn-add-cart"><i class="fas fa-plus"></i> Add</button>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="drinks" data-reveal>
+                    <div class="menu-card-img">
+                        <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?auto=format&fit=crop&w=600&q=80"
+                            alt="Espresso Martini">
+                    </div>
+                    <div class="menu-card-info">
+                        <div class="menu-card-top">
+                            <h3>Espresso Martini</h3>
+                            <span class="menu-card-price">$17</span>
+                        </div>
+                        <p>Vodka, fresh espresso, coffee liqueur, vanilla foam</p>
+                        <button class="btn-add-cart"><i class="fas fa-plus"></i> Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== GALLERY SECTION ====== -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <p class="section-tag">VISUAL FEAST</p>
+                <h2 class="section-title">The <span class="highlight">Gallery.</span></h2>
+            </div>
+            <div class="gallery-grid" data-reveal>
+                <div class="gallery-item" data-caption="Our signature plating style">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
+                        alt="Gourmet Plating">
+                </div>
+                <div class="gallery-item" data-caption="Private dining lounge">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80"
+                        alt="Restaurant Lounge">
+                </div>
+                <div class="gallery-item" data-caption="Master chef at work">
+                    <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80"
+                        alt="Chef Cooking">
+                </div>
+                <div class="gallery-item" data-caption="Flame grilled to perfection">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80"
+                        alt="Grilled Steak">
+                </div>
+                <div class="gallery-item" data-caption="Craft cocktail artistry">
+                    <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80"
+                        alt="Cocktails">
+                </div>
+                <div class="gallery-item" data-caption="Midnight dessert collection">
+                    <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=800&q=80"
+                        alt="Desserts">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== GALLERY MODAL ====== -->
+    <div class="gallery-modal" id="gallery-modal">
+        <button class="modal-close" id="modal-close"><i class="fas fa-times"></i></button>
+        <button class="modal-nav modal-prev" id="modal-prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="modal-nav modal-next" id="modal-next"><i class="fas fa-chevron-right"></i></button>
+        <div class="modal-content">
+            <img id="modal-img" src="" alt="">
+            <p class="modal-caption" id="modal-caption"></p>
+        </div>
+    </div>
+
+    <!-- ====== REVIEWS / TESTIMONIALS ====== -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <p class="section-tag">REAL TALK</p>
+                <h2 class="section-title">What People <span class="highlight">Say.</span></h2>
+            </div>
+            <div class="reviews-slider" data-reveal>
+                <div class="review-card active">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"The Wagyu steak literally melted on my tongue. I've eaten at restaurants
+                        across 30 countries and TastyBites is now my #1. The vibe, the food, the service — everything is
+                        <strong>ELITE</strong>."</p>
+                    <div class="review-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80"
+                            alt="James R.">
+                        <div>
+                            <h4>James Rodriguez</h4>
+                            <span>Food Critic, NYC</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Brought my family here for our anniversary. The ambience is jaw-dropping.
+                        Kids loved the lava cake, we loved the cocktails. Already booked our next visit. This place is
+                        <strong>ADDICTIVE</strong>."</p>
+                    <div class="review-author">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80"
+                            alt="Sarah K.">
+                        <div>
+                            <h4>Sarah Kim</h4>
+                            <span>Regular Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="review-text">"As a fellow chef, I respect the craft here. The flavors are complex, the
+                        presentation is art. Their Beast Burger is the single best burger I have ever tasted. <strong>NO
+                            CAP</strong>."</p>
+                    <div class="review-author">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=100&q=80"
+                            alt="Marcus Lee">
+                        <div>
+                            <h4>Chef Marcus Lee</h4>
+                            <span>Executive Chef, LA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-dots" id="review-dots"></div>
+        </div>
+    </section>
+
+    <!-- ====== RESERVATION / ORDER FORM ====== -->
+    <section class="reserve" id="reserve">
+        <div class="container">
+            <div class="reserve-grid">
+                <div class="reserve-info" data-reveal="left">
+                    <p class="section-tag">DON'T MISS OUT</p>
+                    <h2 class="section-title">Reserve Your <span class="highlight">Seat.</span></h2>
+                    <p>Tables fill fast. Book now and experience the flavor revolution. Walk-ins welcome but
+                        reservations get priority.</p>
+                    <div class="reserve-details">
+                        <div class="detail">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Opening Hours</h4>
+                                <p>Mon-Sun: 11:00 AM — 11:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>42 Flame Street, Downtown District</p>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+1 (555) 420-BITE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reserve-form-wrap" data-reveal="right">
+                    <form class="reserve-form" id="reserve-form">
+                        <h3>Book a Table</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="res-name">Full Name</label>
+                                <input type="text" id="res-name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="res-email">Email</label>
+                                <input type="email" id="res-email" placeholder="john@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="res-date">Date</label>
+                                <input type="date" id="res-date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="res-time">Time</label>
+                                <input type="time" id="res-time" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="res-guests">Guests</label>
+                                <select id="res-guests" required>
+                                    <option value="">Select</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 People</option>
+                                    <option value="3-4">3-4 People</option>
+                                    <option value="5-8">5-8 People</option>
+                                    <option value="8+">8+ People</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="res-occasion">Occasion</label>
+                                <select id="res-occasion">
+                                    <option value="">Select (Optional)</option>
+                                    <option value="birthday">Birthday</option>
+                                    <option value="anniversary">Anniversary</option>
+                                    <option value="date">Date Night</option>
+                                    <option value="business">Business</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="res-notes">Special Requests</label>
+                            <textarea id="res-notes" placeholder="Any dietary requirements or preferences..."
+                                rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit" id="btn-submit">
+                            <span>Confirm Reservation</span>
+                            <i class="fas fa-check-circle"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== CONTACT / MAP SECTION ====== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-map" data-reveal="left">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215208137741!2d-73.9878531!3d40.7484405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                        loading="lazy" title="TastyBites Location"></iframe>
+                </div>
+                <div class="contact-info" data-reveal="right">
+                    <h3>Find Us</h3>
+                    <p>Located in the heart of the city. Easy access via subway and parking available.</p>
+                    <div class="contact-socials">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">TASTY<span>BITES</span></a>
+                    <p>Bold flavors. Zero compromises. The ultimate dining experience since 2012.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#reserve">Reservations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Get 10% Off</h4>
+                    <p>Join our mailing list for exclusive deals.</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TastyBites. All Rights Reserved. Made with 🔥</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
