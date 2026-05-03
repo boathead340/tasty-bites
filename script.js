@@ -399,3 +399,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// ---- CHATBOT TRIGGERS ----
+document.querySelectorAll('.chat-trigger').forEach(trigger => {
+    trigger.addEventListener('click', () => {
+        if (window.chatbase) {
+            window.chatbase('open');
+        } else {
+            const chatbotSection = document.getElementById('chatbot');
+            if (chatbotSection) {
+                chatbotSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    });
+});

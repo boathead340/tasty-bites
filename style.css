@@ -1560,6 +1560,20 @@ footer {
 }
 
 /* ============================================
+   CHATBOT TRIGGERS
+   ============================================ */
+.chat-trigger {
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.chat-trigger:hover {
+    border-color: var(--accent) !important;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow-sm);
+}
+
+/* ============================================
    RESPONSIVE
    ============================================ */
 @media (max-width: 1024px) {

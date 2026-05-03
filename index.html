@@ -92,6 +92,9 @@
             <div class="scroll-line"></div>
         </div>
     </section>
+    <script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="sW2PQBIi7WTBhNTOa2JMB";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
 
     <!-- ====== ABOUT SECTION ====== -->
     <section class="about" id="about">
@@ -544,10 +547,16 @@
                             <textarea id="res-notes" placeholder="Any dietary requirements or preferences..."
                                 rows="3"></textarea>
                         </div>
-                        <button type="submit" class="btn-submit" id="btn-submit">
-                            <span>Confirm Reservation</span>
-                            <i class="fas fa-check-circle"></i>
-                        </button>
+                        <div style="display: flex; gap: 1rem; width: 100%;">
+                            <button type="submit" class="btn-submit" id="btn-submit" style="flex: 2;">
+                                <span>Confirm Reservation</span>
+                                <i class="fas fa-check-circle"></i>
+                            </button>
+                            <button type="button" class="btn-outline chat-trigger" style="flex: 1; padding: 1rem;">
+                                <span>Ask AI</span>
+                                <i class="fas fa-robot"></i>
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -573,6 +582,35 @@
                         <a href="#" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
                         <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== CHATBOT SECTION ====== -->
+    <section class="chatbot" id="chatbot" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="chatbot-info" data-reveal="left" style="display: flex; flex-direction: column; justify-content: center;">
+                    <p class="section-tag">24/7 SUPPORT</p>
+                    <h2 class="section-title">Ask Our <span class="highlight">AI Assistant.</span></h2>
+                    <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 1.05rem; line-height: 1.8;">
+                        Have questions about our menu, need help booking a table, or want to know about today's Chef Specials? Our intelligent AI Assistant is trained on all things TastyBites and is ready to assist you right now.
+                    </p>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <span class="chat-trigger" style="padding: 0.6rem 1.2rem; background: var(--bg-card); border: 1px solid var(--glass-border); border-radius: 50px; font-size: 0.85rem;"><i class="fas fa-utensils" style="color: var(--accent); margin-right: 8px;"></i> Menu Details</span>
+                        <span class="chat-trigger" style="padding: 0.6rem 1.2rem; background: var(--bg-card); border: 1px solid var(--glass-border); border-radius: 50px; font-size: 0.85rem;"><i class="fas fa-calendar-check" style="color: var(--accent); margin-right: 8px;"></i> Reservations</span>
+                        <span class="chat-trigger" style="padding: 0.6rem 1.2rem; background: var(--bg-card); border: 1px solid var(--glass-border); border-radius: 50px; font-size: 0.85rem;"><i class="fas fa-map-marker-alt" style="color: var(--accent); margin-right: 8px;"></i> Location Info</span>
+                    </div>
+                </div>
+                <div class="chatbot-wrapper" data-reveal="right" style="border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-glow-sm); border: 1px solid var(--glass-border); background: var(--bg-card); height: 700px;">
+                    <iframe
+                        src="https://www.chatbase.co/chatbot-iframe/sW2PQBIi7WTBhNTOa2JMB"
+                        width="100%"
+                        style="height: 100%; border: none; min-height: 700px;"
+                        frameborder="0"
+                        allow="microphone"
+                    ></iframe>
                 </div>
             </div>
         </div>
